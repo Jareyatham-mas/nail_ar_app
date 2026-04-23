@@ -1,0 +1,13 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Prompt', 'Sarabun', system-ui, sans-serif;
+  background: #faf8f6;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+button { font-family: inherit; }
+input  { font-family: inherit; }
+input:focus { outline: none; border-color: #C9607A !important; box-shadow: 0 0 0 3px rgba(201,96,122,0.12); }
+::-webkit-scrollbar { width: 0; }
