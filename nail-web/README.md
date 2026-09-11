@@ -1,55 +1,54 @@
-# 💅 Nail AR Try-On Web App
+# Nail AR Try-On Web App
 
-A **mobile-first web application** that allows users to **virtually try on nail designs using AR (Augmented Reality)** in real-time via their device camera.
+A mobile-first web application that allows users to virtually try on nail designs using augmented reality (AR) through their device camera in real time.
 
-Built to enhance the customer experience for nail salons by letting users preview nail styles before making a decision.
-
----
-
-## 🚀 Features
-
-* 📱 **Mobile-first design** (optimized for iPhone & modern smartphones)
-* 🎥 **Real-time camera integration**
-* ✋ **Hand tracking using AI (MediaPipe)**
-* 💅 **AR nail overlay on all 5 fingers**
-* 🎨 **Multiple nail designs from database**
-* ⚡ Smooth animation with position/rotation tracking
-* 🌗 Ready for modern UI (can support dark/light themes)
+This project focuses on improving user experience for nail selection by enabling realistic visualization directly on the user's hand.
 
 ---
 
-## 🧠 How It Works
+## Features
 
-1. Open the web app on your mobile device
-2. Allow camera access
-3. AI detects your hand using **MediaPipe Hands**
-4. The system maps finger positions
-5. Nail images are rendered on top of your real fingers in real-time
+* Real-time camera integration
+* Hand tracking using MediaPipe
+* AR overlay of nail designs on all fingers
+* Smooth position, scale, and rotation tracking
+* Mobile-first responsive design
+* Multiple nail designs from a data source
 
 ---
 
-## 🛠️ Tech Stack
+## How It Works
+
+1. Open the application on a mobile device
+2. Grant camera access
+3. The system detects the hand using MediaPipe Hands
+4. Finger landmarks are calculated in real time
+5. Nail images are rendered and aligned to each finger
+
+---
+
+## Tech Stack
 
 ### Frontend
 
 * React (Vite)
 * Tailwind CSS
 
-### AR / AI
+### AR / Computer Vision
 
 * @mediapipe/hands
 * camera_utils
+* HTML5 Canvas
 
 ### Other
 
 * JavaScript (ES6+)
-* HTML5 Canvas
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```bash id="k2mz8f"
 nail_ar_app/
 ├── src/
 │   ├── components/
@@ -64,76 +63,77 @@ nail_ar_app/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation and Setup
 
-```bash
+```bash id="9xq2pl"
 # Clone the repository
 git clone https://github.com/Jareyatham-mas/nail_ar_app.git
 
-# Navigate into project
+# Navigate into the project
 cd nail_ar_app
 
 # Install dependencies
 npm install
 
-# Run development server
+# Start development server
 npm run dev
 ```
 
 ---
 
-## 📸 Demo (Concept)
+## Use Cases
 
-* Live camera overlay with nail designs
-* Real-time finger tracking
-* Smooth AR rendering
-
----
-
-## 🎯 Use Cases
-
-* Nail salons showcasing designs
-* Customers previewing styles before booking
-* E-commerce beauty platforms
-* AR-based beauty tech experiments
+* Nail salons previewing designs for customers
+* Users selecting nail styles before booking
+* AR-based beauty applications
+* Experimental projects in computer vision
 
 ---
 
-## ⚠️ Known Issues
+## Known Issues
 
-* Camera permission required on first use
-* Performance may vary depending on device
-* AR accuracy depends on lighting conditions
-
----
-
-## 🔮 Future Improvements
-
-* 🖐️ Better finger segmentation accuracy
-* 🎨 Custom nail color picker
-* 🛒 Integration with booking / e-commerce
-* ☁️ Cloud database for designs
-* 🤳 Save & share preview images
+* Camera permission is required
+* Performance varies depending on device capability
+* Tracking accuracy depends on lighting conditions
 
 ---
 
-## 👨‍💻 Author
+## Future Improvements
 
-**Jareyatham (Men Swa)**
-Computer Science & Software Innovation Student
-
----
-
-## ⭐ Notes
-
-This project is part of a learning journey in:
-
-* AR on Web
-* Computer Vision
-* Frontend Development
+* Improved finger segmentation accuracy
+* Custom nail color and pattern editor
+* Save and share preview images
+* Backend integration for design management
+* Booking or e-commerce integration
 
 ---
 
-## 📜 License
+## Challenges and Solutions
+
+* Hand tracking stability
+  Applied smoothing techniques to reduce jitter from landmark detection
+
+* Alignment accuracy
+  Adjusted scale and rotation of overlays based on finger orientation
+
+* Rendering performance
+  Optimized canvas drawing to maintain smooth real-time updates
+
+---
+
+## Author
+
+Jareyatham (Men Swa)
+Computer Science and Software Innovation
+
+---
+
+## Notes
+
+This project demonstrates practical implementation of augmented reality concepts on the web, combining computer vision with frontend development to create an interactive user experience.
+
+---
+
+## License
 
 This project is for educational purposes.
