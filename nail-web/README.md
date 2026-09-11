@@ -1,16 +1,139 @@
-# React + Vite
+# 💅 Nail AR Try-On Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **mobile-first web application** that allows users to **virtually try on nail designs using AR (Augmented Reality)** in real-time via their device camera.
 
-Currently, two official plugins are available:
+Built to enhance the customer experience for nail salons by letting users preview nail styles before making a decision.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 📱 **Mobile-first design** (optimized for iPhone & modern smartphones)
+* 🎥 **Real-time camera integration**
+* ✋ **Hand tracking using AI (MediaPipe)**
+* 💅 **AR nail overlay on all 5 fingers**
+* 🎨 **Multiple nail designs from database**
+* ⚡ Smooth animation with position/rotation tracking
+* 🌗 Ready for modern UI (can support dark/light themes)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 How It Works
+
+1. Open the web app on your mobile device
+2. Allow camera access
+3. AI detects your hand using **MediaPipe Hands**
+4. The system maps finger positions
+5. Nail images are rendered on top of your real fingers in real-time
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React (Vite)
+* Tailwind CSS
+
+### AR / AI
+
+* @mediapipe/hands
+* camera_utils
+
+### Other
+
+* JavaScript (ES6+)
+* HTML5 Canvas
+
+---
+
+## 📁 Project Structure
+
+```
+nail_ar_app/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── utils/
+│   └── assets/
+├── public/
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Jareyatham-mas/nail_ar_app.git
+
+# Navigate into project
+cd nail_ar_app
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+---
+
+## 📸 Demo (Concept)
+
+* Live camera overlay with nail designs
+* Real-time finger tracking
+* Smooth AR rendering
+
+---
+
+## 🎯 Use Cases
+
+* Nail salons showcasing designs
+* Customers previewing styles before booking
+* E-commerce beauty platforms
+* AR-based beauty tech experiments
+
+---
+
+## ⚠️ Known Issues
+
+* Camera permission required on first use
+* Performance may vary depending on device
+* AR accuracy depends on lighting conditions
+
+---
+
+## 🔮 Future Improvements
+
+* 🖐️ Better finger segmentation accuracy
+* 🎨 Custom nail color picker
+* 🛒 Integration with booking / e-commerce
+* ☁️ Cloud database for designs
+* 🤳 Save & share preview images
+
+---
+
+## 👨‍💻 Author
+
+**Jareyatham (Men Swa)**
+Computer Science & Software Innovation Student
+
+---
+
+## ⭐ Notes
+
+This project is part of a learning journey in:
+
+* AR on Web
+* Computer Vision
+* Frontend Development
+
+---
+
+## 📜 License
+
+This project is for educational purposes.
